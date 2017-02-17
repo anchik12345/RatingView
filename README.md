@@ -1,16 +1,24 @@
 # RatingView
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-RatingView-green.svg?style=true)](https://android-arsenal.com/details/1/3770)
 
-Simple android widget that can replace standard inconvenient RatingBar in your app.
+Simple android widget that can replace standard inconvenient RatingBar in your app. Adds ability to set step_size=0.1.
 
 ![Screenshot](https://googledrive.com/host/0Bwz1_b9mA7XYbC1EQ28xaHVwcGc/ratingview2.jpg)
 ##Description
 The default Android `RatingBar` widget hardly can satisfy developers' needs. It's a pain to customize it at all. This simple view can take a huge advantage of setting and scaling drawables for rating view easily.
-##Usage
-You can download this library with the following line in your `app` module `build.gradle`:
+##Installation
+To use the library, first include it your project using Gradle
 ```gradle
-compile 'com.github.ornolfr:rating-view:0.1.2@aar'
-```    
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+	dependencies {
+	        compile 'com.github.anchik123456:RatingView:679d452dfb'
+	}
+```	
 ##Example
 Declare `RatingView` in your XML with `app` attributes:
 ```xml
