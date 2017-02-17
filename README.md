@@ -1,7 +1,7 @@
 # RatingView
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-RatingView-green.svg?style=true)](https://android-arsenal.com/details/1/3770)
 
-Simple android widget that can replace standard inconvenient RatingBar in your app.
+Simple android widget that can replace standard inconvenient RatingBar in your app. Originally, only whole and half filled stars were supported. This forked repository adds ability to set 0.1/0.2/../0.9 filled stars.
 
 ![Screenshot](https://googledrive.com/host/0Bwz1_b9mA7XYbC1EQ28xaHVwcGc/ratingview2.jpg)
 ##Description
