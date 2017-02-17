@@ -3,21 +3,22 @@
 
 Simple android widget that can replace standard inconvenient RatingBar in your app. Adds ability to set step_size=0.1.
 
-![Screenshot](https://googledrive.com/host/0Bwz1_b9mA7XYbC1EQ28xaHVwcGc/ratingview2.jpg)
+##[Screenshot]
+<img width="200" src="https://drive.google.com/uc?id=0B7ZVk3cvDAFAZTUwM3JHdVFvdG8">
 ##Description
 The default Android `RatingBar` widget hardly can satisfy developers' needs. It's a pain to customize it at all. This simple view can take a huge advantage of setting and scaling drawables for rating view easily.
 ##Installation
 To use the library, first include it your project using Gradle
 ```gradle
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
 	}
-	dependencies {
-	        compile 'com.github.anchik123456:RatingView:679d452dfb'
-	}
+}
+dependencies {
+	compile 'com.github.anchik12345:RatingView:97da92a481'
+}
 ```	
 ##Example
 Declare `RatingView` in your XML with `app` attributes:
