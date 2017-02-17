@@ -5,6 +5,14 @@
         <attr name="max_count" format="integer" />
         <attr name="rating" format="float" />
         <attr name="is_indicator" format="boolean" />
+        <attr name="drawable_10" format="reference" />
+        <attr name="drawable_20" format="reference" />
+        <attr name="drawable_30" format="reference" />
+        <attr name="drawable_40" format="reference" />
+        <attr name="drawable_60" format="reference" />
+        <attr name="drawable_70" format="reference" />
+        <attr name="drawable_80" format="reference" />
+        <attr name="drawable_90" format="reference" />
         <attr name="drawable_empty" format="reference" />
         <attr name="drawable_filled" format="reference" />
         <attr name="drawable_half" format="reference" />

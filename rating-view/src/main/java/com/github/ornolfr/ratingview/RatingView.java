@@ -36,6 +36,14 @@ public class RatingView extends View implements View.OnTouchListener {
 
     //Bitmaps for your rating drawables
     private Bitmap mDrawableEmpty, mDrawableHalf, mDrawableFilled;
+    private Bitmap mDrawable10;
+    private Bitmap mDrawable20;
+    private Bitmap mDrawable30;
+    private Bitmap mDrawable40;
+    private Bitmap mDrawable60;
+    private Bitmap mDrawable70;
+    private Bitmap mDrawable80;
+    private Bitmap mDrawable90;
 
     //For drawing view
     private Rect mRect = new Rect();
@@ -115,6 +123,30 @@ public class RatingView extends View implements View.OnTouchListener {
         mDrawableFilled = BitmapFactory.decodeResource(getContext().getResources(),
                 a.getResourceId(R.styleable.RatingView_drawable_filled, R.drawable.ic_star_filled));
 
+        mDrawable10 = BitmapFactory.decodeResource(getContext().getResources(),
+                a.getResourceId(R.styleable.RatingView_drawable_10, R.drawable.ic_star_10));
+
+        mDrawable20 = BitmapFactory.decodeResource(getContext().getResources(),
+                a.getResourceId(R.styleable.RatingView_drawable_20, R.drawable.ic_star_20));
+
+        mDrawable30 = BitmapFactory.decodeResource(getContext().getResources(),
+                a.getResourceId(R.styleable.RatingView_drawable_30, R.drawable.ic_star_30));
+
+        mDrawable40 = BitmapFactory.decodeResource(getContext().getResources(),
+                a.getResourceId(R.styleable.RatingView_drawable_40, R.drawable.ic_star_40));
+
+        mDrawable60 = BitmapFactory.decodeResource(getContext().getResources(),
+                a.getResourceId(R.styleable.RatingView_drawable_60, R.drawable.ic_star_60));
+
+        mDrawable70 = BitmapFactory.decodeResource(getContext().getResources(),
+                a.getResourceId(R.styleable.RatingView_drawable_70, R.drawable.ic_star_70));
+
+        mDrawable80 = BitmapFactory.decodeResource(getContext().getResources(),
+                a.getResourceId(R.styleable.RatingView_drawable_80, R.drawable.ic_star_80));
+
+        mDrawable90 = BitmapFactory.decodeResource(getContext().getResources(),
+                a.getResourceId(R.styleable.RatingView_drawable_90, R.drawable.ic_star_90));
+
         a.recycle();
 
     }
@@ -146,9 +178,49 @@ public class RatingView extends View implements View.OnTouchListener {
                 mRect.offset(mDrawableSize + mDrawableMargin, 0);
             }
 
-            //drawing half drawable if needed
-            if (mRating - fullDrawablesCount >= 0.25f && mRating - fullDrawablesCount < 0.75f) {
+            //drawing .10 drawable if needed
+            if (mRating - fullDrawablesCount >= 0.01f && mRating - fullDrawablesCount < 0.11f) {
+                canvas.drawBitmap(mDrawable10, null, mRect, null);
+                mRect.offset(mDrawableSize + mDrawableMargin, 0);
+            }
+            //drawing .20 drawable if needed
+            if (mRating - fullDrawablesCount >= 0.11f && mRating - fullDrawablesCount < 0.21f) {
+                canvas.drawBitmap(mDrawable20, null, mRect, null);
+                mRect.offset(mDrawableSize + mDrawableMargin, 0);
+            }
+            //drawing .30 drawable if needed
+            if (mRating - fullDrawablesCount >= 0.21f && mRating - fullDrawablesCount < 0.31f) {
+                canvas.drawBitmap(mDrawable30, null, mRect, null);
+                mRect.offset(mDrawableSize + mDrawableMargin, 0);
+            }
+            //drawing .40 drawable if needed
+            if (mRating - fullDrawablesCount >= 0.31f && mRating - fullDrawablesCount < 0.41f) {
+                canvas.drawBitmap(mDrawable40, null, mRect, null);
+                mRect.offset(mDrawableSize + mDrawableMargin, 0);
+            }
+            //drawing .50 drawable if needed
+            if (mRating - fullDrawablesCount >= 0.41f && mRating - fullDrawablesCount < 0.51f) {
                 canvas.drawBitmap(mDrawableHalf, null, mRect, null);
+                mRect.offset(mDrawableSize + mDrawableMargin, 0);
+            }
+            //drawing .60 drawable if needed
+            if (mRating - fullDrawablesCount >= 0.51f && mRating - fullDrawablesCount < 0.61f) {
+                canvas.drawBitmap(mDrawable60, null, mRect, null);
+                mRect.offset(mDrawableSize + mDrawableMargin, 0);
+            }
+            //drawing .70 drawable if needed
+            if (mRating - fullDrawablesCount >= 0.61f && mRating - fullDrawablesCount < 0.71f) {
+                canvas.drawBitmap(mDrawable70, null, mRect, null);
+                mRect.offset(mDrawableSize + mDrawableMargin, 0);
+            }
+            //drawing .80 drawable if needed
+            if (mRating - fullDrawablesCount >= 0.71f && mRating - fullDrawablesCount < 0.81f) {
+                canvas.drawBitmap(mDrawable80, null, mRect, null);
+                mRect.offset(mDrawableSize + mDrawableMargin, 0);
+            }
+            //drawing .90 drawable if needed
+            if (mRating - fullDrawablesCount >= 0.81f && mRating - fullDrawablesCount < 0.97f) {
+                canvas.drawBitmap(mDrawable90, null, mRect, null);
                 mRect.offset(mDrawableSize + mDrawableMargin, 0);
             }
 
